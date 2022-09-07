@@ -9,6 +9,7 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="./print.css" rel="stylesheet" type="text/css" media="print">
 	<link href="./Activity.css" rel="stylesheet" type="text/css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -16,21 +17,11 @@
     
 	<body>
     <div align="center" class="container-fluid mx-auto">
-      <table border="0" cellpadding="0" cellspacing="0" width="788">
-        <tbody>
-          <tr>
-            <td style="" align="LEFT" valign="TOP" width="100%"></td>
-          </tr>
-        </tbody>
-      </table>
       <div id="maincontainer" class="container-fluid mx-auto">
         <div id="maindiv">
-          <div id="header">
+          <div  class="row w-100" id="header">
             <div id="logo"> <a href="https://www.yellowstonejobs.com/"><img src="./66_17_logo-yellowstone.gif" border="0"></a> </div>
-            <div id="google_translate_element" style="float:left;position:relative;padding-top:25px;padding-left:350px;">
-              <div align="left"> </div>
-            </div>
-            <div id="searchform">
+            <div id="searchform" class="flex-fill float-end">
               <table valign="center" align="right">
                 <form method="GET" action="https://www.yellowstonejobs.com">
                 </form>
@@ -49,22 +40,8 @@
               </table>
             </div>
           </div>
-          <div id="hr2px"></div>
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <table border="0" cellpadding="0" cellspacing="0">
             <tbody>
-              <tr>
-                <td id="td_left" rowspan="3" valign="top"><table style="width: 195px;" border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                    <tr>
-                        <td></td>
-                      </tr>
-                  </tbody>
-                  </table></td>
-                <td id="td_images" colspan="2" align="center" valign="top"><div id="topimg"></div>
-                  <div id="hr2px"></div>
-                  <div id="hr2px"></div>
-                  <div id="titleimg"></div></td>
-              </tr>
               <tr>
                 <td id="td_main" colspan="2" valign="top"><h3>Application Form</h3>
                   <p>If you are an individual with disabilities who needs accommodation or
@@ -76,7 +53,7 @@
                     basis of race, color, creed, religion, sexual orientation, national 
                     origin, ancestry, veteran status, age, disability or any other legally 
                     protected status under applicable law. AA/EOE M/F/D/V</p>
-                  <div class="w-100 mx-auto">
+                  <div class="mx-auto">
                       <p class="text-danger fw-bold text-center bg-warning" data-bs-toggle="collapse" href="#collapseWarning">!!!!! BEFORE YOU START THIS APPLICATION !!!!!<br/>CLICK HERE</p>
                       <div class="collapse" id="collapseWarning">
                           <p>Have you already submitted one application for this season's employment?&nbsp; <span class="fw-bold text-danger">If so, please DO NOT submit another application!</span> <br/>
@@ -106,7 +83,7 @@
                           <p class="p-2">WORK ELIGIBILITY <span class="float-end pe-2">V</span></p>
                       </div>
                       <div class="collapse pb-3" id="collapseEligibility">
-                          <table border="0" width="750">
+                          <table border="0">
                           <tbody>
                           <tr>
                               <td colspan="2"><br>
@@ -150,7 +127,7 @@
                                           <br>
                                           If yes, state details and dates<br>
                                       </b>
-                                      <input name="Felony_Details" size="100" maxlength="150" type="TEXT">
+                                      <input name="Felony_Details" size="50" maxlength="150" type="TEXT">
                                       <br>
                                       <hr>
                                   </center></td>
@@ -227,11 +204,11 @@
                           </tr>
                           <tr>
                               <td colspan="2"><b>Additional School/Training/Special Skills</b><br>
-                                  <input name="Additional_School_Training_Info" size="100" maxlength="150" type="text"></td>
+                                  <input name="Additional_School_Training_Info" size="50" maxlength="150" type="text"></td>
                           </tr>
                           <tr>
                               <td colspan="2"><b>Additional Info/Application Requests/Location Request</b><br>
-                                  <input name="Special_Skills" size="100" maxlength="150" type="TEXT"><hr></td>
+                                  <input name="Special_Skills" size="50" maxlength="150" type="TEXT"><hr></td>
                           </tr>
                           <tr>
                               <td colspan="2"><b> <font color="red"><i>REQUIRED ENTRY</i></font><br>
@@ -404,7 +381,7 @@
                           </tr>
                           <tr>
                               <td colspan="2"><b>Applying with a friend or spouse? Please provide his or her FULL name: </b>
-                                  <input name="Friend_Applying_Details_Name" maxlength="60" size="60" type="text">
+                                  <input name="Friend_Applying_Details_Name" maxlength="60" size="50" type="text">
                                   <br>
                                   <b>Are you traveling together?
                                       Yes
@@ -446,7 +423,7 @@
                           <p class="p-2">PERSONAL INFORMATION <span class="float-end pe-2">V</span></p>
                       </div>
                       <div class="collapse pb-3" id="collapsePersonal">
-                          <table border="0" width="750">
+                          <table border="0">
                             <tbody>
                               <tr>
                                 <td><b>First Name</b></td>
@@ -712,7 +689,7 @@
                               </tr>
                               <tr>
                                 <td><b>E-mail Address</b></td>
-                                <td><input name="APL-EMAIL-ADDRESS" maxlength="60" size="60" type="text"></td>
+                                <td><input name="APL-EMAIL-ADDRESS" maxlength="60" size="50" type="text"></td>
                               </tr>
                             </tbody>
                           </table>
@@ -724,7 +701,7 @@
                           <p class="p-2">POSITIONS APPLIED FOR <span class="float-end pe-2">V</span></p>
                       </div>
                       <div class="collapse pb-3" id="collapsePositions">
-                          <table border="0" width="750">
+                          <table border="0" >
                             <tbody>
                               <tr>
                                 <td colspan="2" align="center"><b> Please select the position(s) that you are applying for in order of preference.<br>
@@ -1062,7 +1039,7 @@
                                 for a different seasonal position or year round/long season position --<br>
                                 please enter the name of the job into the following box.<br>
                                 </b></font><b>
-                                  <input name="Other_Position" maxlength="60" size="60" type="text">
+                                  <input name="Other_Position" maxlength="60" size="50" type="text">
                                   <br>
                                   <br>
                                   <input value="Seasonal" name="Position_Type" checked="checked"  type="radio">
@@ -1137,8 +1114,8 @@
                           <p class="p-2">WORK EXPERIENCE (Recent First) <span class="float-end pe-2">V</span></p>
                       </div>
                       <div class="collapse pb-3" id="collapseExperience">
-                          <table border="0" width="750">
-                            <tbody id="edTable">
+                          <table border="0">
+                            <tbody id="empTable">
                               <tr>
                                 <td colspan="2"><b>Employer #1</b></td>
                               </tr>
@@ -1412,7 +1389,7 @@
                               </tr>
                               <tr>
                                 <td colspan="2"><b>Specific Duties</b>
-                                  <input name="Employer_1_Duties" maxlength="60" size="60" type="text"></td>
+                                  <input name="Employer_1_Duties" maxlength="50" size="50" type="text"></td>
                               </tr>
                               <tr>
                                 <td colspan="2"><b>Reason For Leaving</b>
@@ -1420,10 +1397,10 @@
                               </tr>
                             </tbody>
                           </table>
-                          <button class="btn btn-primary mt-2 float-start" type="button" id="addEducation">
+                          <button class="btn btn-primary mt-2 float-start" type="button" id="addEmployer">
                               Add
                           </button>
-                          <button class="btn btn-primary mt-2 float-start ms-2" type="button" id="removeEducation">
+                          <button class="btn btn-primary mt-2 float-start ms-2" type="button" id="removeEmployer">
                               Remove
                           </button>
                           <button class="btn btn-primary mx-5 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation,#collapseExperience" aria-expanded="false" aria-controls="collapseExample">
@@ -1434,44 +1411,38 @@
                           <p class="p-2">EDUCATION <span class="float-end pe-2">V</span></p>
                       </div>
                       <div class="collapse pb-3" id="collapseEducation">
-                          <table border="0" width="750">
+                          <table border="0">
                         <tbody>
                           <tr>
                             <td colspan="2"><center>
                               </center>
-                              <table border="1" cellpadding="1" cellspacing="1" width="740">
-                                <tbody>
+                              <table border="1" cellpadding="1" cellspacing="1">
+                                <tbody id="eduTable">
                                   <tr>
-                                    <td align="center"><b>Name of School</b></td>
-                                    <td align="center"><b>Location</b></td>
-                                    <td align="center"><b>Degree Received</b></td>
-                                    <td align="center"><b>Field of Study</b></td>
-                                    <td align="center"><b>Graduate?<br>
-                                      (Y or N)</b></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" width="23%"><input name="School_1_Name" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_1_Location" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_1_Degree_Received" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_1_Field_of_Study" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="8%"><input name="School_1_Graduate" maxlength="1" size="1" onchange="javascript:this.value=this.value.toUpperCase();" type="text"></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" width="23%"><input name="School_2_Name" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_2_Location" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_2_Degree_Received" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_2_Field_of_Study" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="8%"><input name="School_2_Graduate" maxlength="1" size="1" onchange="javascript:this.value=this.value.toUpperCase();" type="text"></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" width="23%"><input name="School_3_Name" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_3_Location" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="23%"><input name="School_3_Degree_Received" maxlength="17" size="17" type="text"></td>
-                                    <td align="center" width="8%"><input name="School_3_Field_of_Study" maxlength="17" size="17" type="text"></td>
-                                    <td align="center"><input name="School_3_Graduate" maxlength="1" size="1" onchange="javascript:this.value=this.value.toUpperCase();" type="text"></td>
+                                    <td>
+                                    <p class="fw-bold mb-0">Education #1</p>
+                                    <label class="col-5" for="School_1_Name">Name of School</label>
+                                    <input name="School_1_Name" id="School_1_Name" maxlength="17" size="17" type="text"><br>
+                                    <label class="col-5"  for="School_1_Location">Location</label>
+                                    <input name="School_1_Location" id="School_1_Location" maxlength="17" size="17" type="text"><br>
+                                    <label class="col-5"  for="School_1_Degree_Received">Degree Received</label>
+                                    <input name="School_1_Degree_Received" id="School_1_Degree_Received" maxlength="17" size="17" type="text"><br>
+                                    <label class="col-5"  for="School_1_Field_of_Study">Field of Study</label>
+                                    <input name="School_1_Field_of_Study" id="School_1_Field_of_Study" maxlength="17" size="17" type="text"><br>
+                                    <label class="col-5"  for="School_1_Graduate">Graduate? (Y/N)</label>
+                                    <input name="School_1_Graduate" id="School_1_Graduate" maxlength="1" size="1" onchange="javascript:this.value=this.value.toUpperCase();" type="text">
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
+                                <div class="mb-5">
+                                    <button class="btn btn-primary mt-2 float-start" type="button" id="addEducation">
+                                        Add
+                                    </button>
+                                    <button class="btn btn-primary mt-2 float-start ms-2" type="button" id="removeEducation">
+                                        Remove
+                                    </button>
+                                </div>
                               <br>
                               <hr></td>
                           </tr>

@@ -1,8 +1,9 @@
-let edCount = 1;
+let empCount = 1;
+let eduCount = 1;
 
-function addEd() {
-    edCount++;
-    $("#edTable").append(
+function addEmp() {
+    empCount++;
+    $("#empTable").append(
         `<tr>
             <td colspan="2"><hr></td>
           </tr>
@@ -10,22 +11,22 @@ function addEd() {
             <td colspan="2"><hr></td>
           </tr>
           <tr>
-            <td colspan="2"><b>Employer #${edCount}</b></td>
+            <td colspan="2"><b>Employer #${empCount}</b></td>
           </tr>
           <tr>
             <td colspan="2"><b>Employer Name</b>
-              <input name="Employer_${edCount}_Name" maxlength="30" size="30" type="text"></td>
+              <input name="Employer_${empCount}_Name" maxlength="30" size="30" type="text"></td>
           </tr>
           <tr>
             <td colspan="2"><b>Street Address or PO Box Number </b>
-              <input name="Employer_${edCount}_Street" maxlength="30" size="30" type="text"></td>
+              <input name="Employer_${empCount}_Street" maxlength="30" size="30" type="text"></td>
           </tr>
           <tr>
             <td colspan="2"><b>City
-              <input name="Employer_${edCount}_City" maxlength="30" size="30" type="text">
+              <input name="Employer_${empCount}_City" maxlength="30" size="30" type="text">
               &nbsp;&nbsp;
               State</b>
-              <select name="Employer_${edCount}_State" size="1">
+              <select name="Employer_${empCount}_State" size="1">
                 <option selected="selected" value=""> </option>
                 <option>AL </option>
                 <option>AK </option>
@@ -81,11 +82,11 @@ function addEd() {
                 <option>WY </option>
               </select>
               <b>Zip Code</b>
-              <input name="Employer_${edCount}_Zip" maxlength="10" size="10" type="text"></td>
+              <input name="Employer_${empCount}_Zip" maxlength="10" size="10" type="text"></td>
           </tr>
           <tr>
             <td colspan="2"><b>Country</b>
-              <select name="Employer_${edCount}_Country" size="1">
+              <select name="Employer_${empCount}_Country" size="1">
                 <option selected="selected" value=""> </option>
                 <option value="US">United States </option>
                 <option value="AE">United Arab Emirates </option>
@@ -255,52 +256,84 @@ function addEd() {
                 <option value="ZW">Zimbabwe </option>
               </select>
               <b>Telephone</b>
-              <input name="Employer_${edCount}_Telephone" maxlength="20" size="20" type="text"></td>
+              <input name="Employer_${empCount}_Telephone" maxlength="20" size="20" type="text"></td>
           </tr>
           <tr>
             <td colspan="2"><b>Position</b>
-              <input name="Employer_${edCount}_Position" maxlength="17" size="17" type="text"></td>
+              <input name="Employer_${empCount}_Position" maxlength="17" size="17" type="text"></td>
           </tr>
           <tr>
             <td colspan="2"><b>Supervisor's Name and Title</b>
-              <input name="Employer_${edCount}_Supervisor" maxlength="30" size="30" type="text"></td>
+              <input name="Employer_${empCount}_Supervisor" maxlength="30" size="30" type="text"></td>
           </tr>
           <tr>
             <td colspan="2" ><b>Please enter dates as mm/dd/yyyy (example: 01/12/2009) &nbsp;&nbsp;<br>
               Start Date
-              <input id="sd3" name="Employer_${edCount}_Start_Date" maxlength="10" size="10" type="text">
+              <input id="sd3" name="Employer_${empCount}_Start_Date" maxlength="10" size="10" type="text">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               End Date</b>
-              <input id="ed3" name="Employer_${edCount}_End_Date" maxlength="10" size="10" type="text"></td>
+              <input id="ed3" name="Employer_${empCount}_End_Date" maxlength="10" size="10" type="text"></td>
           </tr>
           <tr>
             <td colspan="2" ><b>May we contact this employer?
               Yes
-              <input name="Employer_${edCount}_Contact" value="Y" type="radio">
+              <input name="Employer_${empCount}_Contact" value="Y" type="radio">
               No</b>
-              <input name="Employer_${edCount}_Contact" value="N" type="radio"></td>
+              <input name="Employer_${empCount}_Contact" value="N" type="radio"></td>
           </tr>
           <tr>
             <td colspan="2"><b>Specific Duties</b>
-              <input name="Employer_${edCount}_Duties" maxlength="60" size="60" type="text"></td>
+              <input name="Employer_${empCount}_Duties" maxlength="50" size="50" type="text"></td>
           </tr>
           <tr>
             <td colspan="2"><b>Reason For Leaving</b>
-              <input name="Employer_${edCount}_Reason_For_Leaving" maxlength="30" size="30" type="text"></td>
+              <input name="Employer_${empCount}_Reason_For_Leaving" maxlength="30" size="30" type="text"></td>
+          </tr>`
+    )
+}
+
+function addEdu() {
+    eduCount++;
+    $("#eduTable").append(
+        `<tr>
+            <td>
+            <hr>
+            <p class="fw-bold mb-0">Education #${eduCount}</p>
+            <label class="col-5" for="School_${eduCount}_Name">Name of School</label>
+            <input name="School_${eduCount}_Name" id="School_${eduCount}_Name" maxlength="17" size="17" type="text"><br>
+            <label class="col-5"  for="School_${eduCount}_Location">Location</label>
+            <input name="School_${eduCount}_Location" id="School_${eduCount}_Location" maxlength="17" size="17" type="text"><br>
+            <label class="col-5"  for="School_${eduCount}_Degree_Received">Degree Received</label>
+            <input name="School_${eduCount}_Degree_Received" id="School_${eduCount}_Degree_Received" maxlength="17" size="17" type="text"><br>
+            <label class="col-5"  for="School_${eduCount}_Field_of_Study">Field of Study</label>
+            <input name="School_${eduCount}_Field_of_Study" id="School_${eduCount}_Field_of_Study" maxlength="17" size="17" type="text"><br>
+            <label class="col-5"  for="School_${eduCount}_Graduate">Graduate? (Y/N)</label>
+            <input name="School_${eduCount}_Graduate" id="School_${eduCount}_Graduate" maxlength="1" size="1" onchange="javascript:this.value=this.value.toUpperCase();" type="text">
+            </td>
           </tr>`
     )
 }
 
 $(function () {
+    $("#addEmployer").on('click', function () {
+        addEmp();
+    });
+    $("#removeEmployer").on('click', function () {
+        if (empCount > 1) {
+            empCount--;
+            for( let i = 0; i < 13; i++ ) {
+                $("#empTable").find("tr").last().remove();
+            }
+        }
+    });
+
     $("#addEducation").on('click', function () {
-        addEd();
+        addEdu();
     });
     $("#removeEducation").on('click', function () {
-        if (edCount > 1) {
-            edCount--;
-            for( let i = 0; i < 13; i++ ) {
-                $("#edTable").find("tr").last().remove();
-            }
+        if (eduCount > 1) {
+            eduCount--;
+            $("#eduTable").find("tr").last().remove();
         }
     });
 })

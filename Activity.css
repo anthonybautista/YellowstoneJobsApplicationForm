@@ -168,8 +168,7 @@ body {
 }
 
 #maincontainer {
-    width: 1023px;
-    background-image: url(../tpl/img/act/main-bg-shadow.gif);
+    min-width: 440px;
     background-repeat: repeat-y;
 	vertical-align:top;
 }
@@ -181,7 +180,6 @@ body {
 
 #maindiv {
 	position:relative;
-    width: 984px;
 	vertical-align:top;
 }
 
@@ -194,7 +192,7 @@ body {
 
 #logo {
     position: relative;
-    width: 300px;
+    width: 185px;
     height: 105px;
     float: left;
 	text-align: left;
@@ -271,13 +269,11 @@ body {
 
 #td_images {
     padding-left: 1px;
-    width: 797px;
     height: 1%;
 }
 
 #td_images_ext {
     padding-left: 1px;
-    width: 984px;
 }
 
 #td_main, #td_main_ext {
@@ -289,10 +285,6 @@ body {
     font-size: 12px;
     vertical-align: top;
     text-align: left;
-}
-
-#td_main_ext {
-    width: 750px;
 }
 
 #td_right {
@@ -309,11 +301,6 @@ body {
     padding-bottom: 0px;
 }
 
-
-
-
-
-
 a.lmlink, a.lmlink:hover, #td_left a, #td_left a:hover {
     text-decoration: none;
     font-size: 11px;
@@ -326,7 +313,6 @@ a.lmlink:hover, #td_left a:hover {
 }
 
 .lmheader {
-    width: 100%;
     padding-left: 20px;
     border-bottom: #000099 solid 1px;
     font-size: 14px;
@@ -336,8 +322,6 @@ a.lmlink:hover, #td_left a:hover {
     position: absolute;
     left: 0px;
     top: 2000px;
-    width: 100%;
-    width: 1000px;
     height: 0px;
 }
 
@@ -583,7 +567,6 @@ td#double_brown_text a {
 }
 
 #bottomdiv {
-    width: 1011px;
     height: 14px;
     background-image: url(../tpl/img/act/bottom-bg-shadow.gif);
     background-repeat: repeat-x;
@@ -596,7 +579,6 @@ td#double_brown_text a {
     padding-bottom: 5px;
     background-color: #EDD681;
     padding-top: 5px;
-    width: 782px;
     padding-left: 5px;
     margin-left: 1px;
     text-align: center;
@@ -691,14 +673,12 @@ td#double_brown_text a {
 #mainimage {
     position: relative;
     float: right;
-    width: 788px;
     height: 305px;
     background-color: #FFFFFF;
 }
 
 /* topmenu */
 #topmenu {
-    width: 100%;
     height: 28px;
     background-image: url(../tpl/img/act/menu-bg.gif);
     background-repeat: repeat-x;
@@ -707,7 +687,6 @@ td#double_brown_text a {
 }
 
 #topmenu_rel {
-    width: 100%;
     height: 28px;
     background-image: url(../tpl/img/act/menu-bg.gif);
     background-repeat: repeat-x;
@@ -750,14 +729,12 @@ td#double_brown_text a {
 #contentarea_top {
     position: relative;
     float: right;
-    width: 947px;
     height: 28px;
     background-image: url(../tpl/img/act/activities-body-top.jpg);
 }
 
 #contentarea_main {
     min-height: 620px;
-    width: 947px;
     background-image: url(../tpl/img/act/activities-content-bg.jpg);
     background-repeat: no-repeat;
 	position:relative;
@@ -870,7 +847,6 @@ td#double_brown_text a {
 #contentarea_container {
     position: relative;
     float: right;
-    width: 947px;
     background-image: url(../tpl/img/act/activities-content-bg-container.jpg);
     background-repeat: repeat-y;
 }
@@ -878,7 +854,6 @@ td#double_brown_text a {
 #searchresults_container {
     position: relative;
     float: left;
-    width: 637px;
 }
 
 #searchresults_container.ajax-loading {
@@ -900,7 +875,6 @@ td#double_brown_text a {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #295984;
     font-size: 16px;
-    width: 580px;
     border-bottom: 1px solid #94A25A;
 }
 
@@ -949,14 +923,12 @@ td#double_brown_text a {
 
 #content_details_top {
     height: 12px;
-    width: 637px;
     background-image: url(../tpl/img/act/activities-content-top.gif);
     background-repeat: no-repeat;
 }
 
 #content_details {
     min-height: 420px;
-    width: 607px;
     background-image: url(../tpl/img/act/activities-content-bg.gif);
     background-repeat: repeat-y;
     padding-left: 15px;
@@ -965,7 +937,6 @@ td#double_brown_text a {
 
 #content_details_bottom {
     height: 13px;
-    width: 637px;
     background-image: url(../tpl/img/act/activities-content-bottom.gif);
     background-repeat: no-repeat;
 }
@@ -996,7 +967,6 @@ td#double_brown_text a {
 }
 
 div.act_list {
-    width: 580px;
     vertical-align: top;
     padding-bottom: 15px;
 }
@@ -1024,14 +994,12 @@ div.act_list_left {
 }
 
 div.act_list_right {
-    width: 405px;
     position: relative;
     float: right;
     vertical-align: top;
 }
 
 div.act_content_left {
-    width: 230px;
     height: 245px;
     position: relative;
     float: left;
@@ -1041,7 +1009,6 @@ div.act_content_left {
 }
 
 div.act_content_right2 {
-    width: 355px;
     position: relative;
     float: right;
     vertical-align: top;
